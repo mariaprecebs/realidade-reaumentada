@@ -6,7 +6,9 @@
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
+    <a-assets>
     <video id="videolindo" src="modelo3d.mp4" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline muted style="display: none;"></video>
+    </a-assets>
     <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
       <a-marker type="pattern" url="pattern-hiroTeste.patt">
         <a-video src="#videolindo" position="0 0.5 0" rotation="0 90 0" width="1.7"></a-video>
